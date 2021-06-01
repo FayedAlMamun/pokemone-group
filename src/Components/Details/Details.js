@@ -1,5 +1,5 @@
-import { Card, CardActionArea, CardActions, CardContent, CardMedia, createMuiTheme, Grid, Typography } from '@material-ui/core';
-import { makeStyles, ThemeProvider } from '@material-ui/styles';
+import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 const useStyles = makeStyles({

@@ -1,4 +1,4 @@
-import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, Paper, Typography } from '@material-ui/core';
+import {  Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import React, { useEffect, useState,useContext } from 'react';
 import { userContext } from '../../App';
@@ -12,7 +12,6 @@ const useStyles = makeStyles({
 const Main = () => {
     const [search,setSearch]=useContext(userContext);
     const [data, setData] = useState([])
-    const [datas, setDatas] = useState([])
     useEffect(() => {
         fetch('https://pokeapi.co/api/v2/pokemon-species/')
             .then(response => response.json())
